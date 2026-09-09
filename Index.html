@@ -6,9 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DevOps Team - Home</title>
+    <title>DevOps Team - About Us</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -22,11 +23,13 @@
             line-height: 1.6;
         }
 
+
         /* HEADER */
 
         header {
             background-color: #1f2937;
             color: white;
+
             padding: 20px 8%;
 
             display: flex;
@@ -41,7 +44,9 @@
         nav a {
             color: white;
             text-decoration: none;
+
             margin-left: 20px;
+
             font-size: 15px;
         }
 
@@ -50,71 +55,93 @@
         }
 
 
-        /* HOME / HERO SECTION */
+        /* ABOUT HERO */
 
-        .hero {
+        .about-hero {
             background-color: #2563eb;
+
             color: white;
 
             text-align: center;
 
-            padding: 100px 20px;
+            padding: 80px 20px;
         }
 
-        .hero h2 {
-            font-size: 45px;
-            margin-bottom: 20px;
+        .about-hero h2 {
+            font-size: 42px;
+
+            margin-bottom: 15px;
         }
 
-        .hero p {
+        .about-hero p {
             font-size: 18px;
+
             max-width: 750px;
-            margin: 0 auto 20px;
+
+            margin: auto;
         }
 
-        .hero button {
-            margin-top: 20px;
 
-            padding: 12px 25px;
+        /* ABOUT SECTION */
 
-            border: none;
-            border-radius: 6px;
+        .about-section {
+            padding: 60px 8%;
 
             background-color: white;
-            color: #2563eb;
-
-            font-size: 16px;
-            font-weight: bold;
-
-            cursor: pointer;
         }
 
-        .hero button:hover {
-            background-color: #e5e7eb;
+        .about-section h2 {
+            text-align: center;
+
+            font-size: 30px;
+
+            color: #1f2937;
+
+            margin-bottom: 25px;
         }
 
+        .about-content {
+            max-width: 850px;
 
-        /* FEATURES */
+            margin: auto;
 
-        .features {
-            padding: 60px 8%;
             text-align: center;
         }
 
-        .features h2 {
-            font-size: 30px;
-            margin-bottom: 40px;
-            color: #1f2937;
+        .about-content p {
+            margin-bottom: 15px;
         }
 
-        .feature-container {
+
+        /* OBJECTIVES */
+
+        .objectives {
+            padding: 60px 8%;
+
+            background-color: #f4f7fb;
+
+            text-align: center;
+        }
+
+        .objectives h2 {
+            font-size: 30px;
+
+            color: #1f2937;
+
+            margin-bottom: 35px;
+        }
+
+        .objective-container {
             display: flex;
+
             justify-content: center;
+
             gap: 25px;
+
             flex-wrap: wrap;
         }
 
-        .feature-card {
+        .objective-card {
             background-color: white;
 
             width: 280px;
@@ -126,30 +153,106 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
-        .feature-card h3 {
+        .objective-card h3 {
             color: #2563eb;
-            margin-bottom: 15px;
+
+            margin-bottom: 12px;
         }
 
 
-        /* PROJECT INFORMATION */
+        /* TEAM SECTION */
 
-        .project-info {
-            background-color: #e5e7eb;
-
+        .team {
             padding: 60px 8%;
+
+            background-color: white;
 
             text-align: center;
         }
 
-        .project-info h2 {
+        .team h2 {
+            font-size: 30px;
+
             color: #1f2937;
-            margin-bottom: 20px;
+
+            margin-bottom: 35px;
         }
 
-        .project-info p {
-            max-width: 800px;
+        .team-container {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 25px;
+
+            flex-wrap: wrap;
+        }
+
+        .team-card {
+            background-color: #f4f7fb;
+
+            width: 280px;
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            border: 1px solid #e5e7eb;
+        }
+
+        .team-card h3 {
+            color: #2563eb;
+
+            margin-bottom: 10px;
+        }
+
+        .team-card .role {
+            font-weight: bold;
+
+            margin-bottom: 10px;
+        }
+
+
+        /* DEVOPS WORKFLOW */
+
+        .workflow {
+            padding: 60px 8%;
+
+            background-color: #e5e7eb;
+
+            text-align: center;
+        }
+
+        .workflow h2 {
+            font-size: 30px;
+
+            color: #1f2937;
+
+            margin-bottom: 30px;
+        }
+
+        .workflow-steps {
+            max-width: 900px;
+
             margin: auto;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+        .step {
+            background-color: white;
+
+            padding: 18px 25px;
+
+            border-radius: 8px;
+
+            font-weight: bold;
         }
 
 
@@ -157,13 +260,12 @@
 
         footer {
             background-color: #1f2937;
+
             color: white;
 
             text-align: center;
 
             padding: 20px;
-
-            margin-top: 0;
         }
 
 
@@ -173,6 +275,7 @@
 
             header {
                 flex-direction: column;
+
                 gap: 15px;
             }
 
@@ -180,20 +283,23 @@
                 margin: 0 8px;
             }
 
-            .hero h2 {
+            .about-hero h2 {
                 font-size: 32px;
             }
 
-            .hero p {
+            .about-hero p {
                 font-size: 16px;
             }
+
         }
+
     </style>
 
 </head>
 
 
 <body>
+
 
     <!-- HEADER -->
 
@@ -203,103 +309,214 @@
 
         <nav>
 
-            <a href="#home">Home</a>
+            <a href="#about">About</a>
 
-            <a href="#features">Features</a>
+            <a href="#objectives">Objectives</a>
 
-            <a href="#project">Project</a>
+            <a href="#team">Team</a>
+
+            <a href="#workflow">Workflow</a>
 
         </nav>
 
     </header>
 
 
-    <!-- HOME SECTION -->
+    <!-- ABOUT HERO -->
 
-    <section class="hero" id="home">
+    <section class="about-hero" id="about">
 
-        <h2>Welcome to Our DevOps Project</h2>
-
-        <p>
-            Welcome to our collaborative DevOps project.
-            This website demonstrates how a development team
-            can work together using Git, GitHub, branches,
-            commits, and pull requests.
-        </p>
+        <h2>About Our Project</h2>
 
         <p>
-            Each team member contributes to the project
-            through an independent development branch.
+            Learn more about our team, our objectives,
+            and how we use DevOps practices to collaborate
+            and build software efficiently.
         </p>
-
-        <button onclick="document.getElementById('features').scrollIntoView()">
-            Explore Project
-        </button>
 
     </section>
 
 
-    <!-- FEATURES SECTION -->
+    <!-- ABOUT SECTION -->
 
-    <section class="features" id="features">
+    <section class="about-section">
 
-        <h2>What We Demonstrate</h2>
+        <h2>Who We Are</h2>
 
-        <div class="feature-container">
+        <div class="about-content">
 
-            <div class="feature-card">
+            <p>
+                We are a team of developers working together
+                on a collaborative DevOps project.
+            </p>
 
-                <h3>Git</h3>
+            <p>
+                Our project demonstrates how modern software
+                development teams use version control and
+                collaboration tools to manage their code.
+            </p>
 
-                <p>
-                    Git is used to track changes and maintain
-                    different versions of our project.
-                </p>
-
-            </div>
-
-
-            <div class="feature-card">
-
-                <h3>GitHub</h3>
-
-                <p>
-                    GitHub allows our team to store the project
-                    online and collaborate with each other.
-                </p>
-
-            </div>
-
-
-            <div class="feature-card">
-
-                <h3>Pull Requests</h3>
-
-                <p>
-                    Team members submit their changes through
-                    pull requests before they are merged.
-                </p>
-
-            </div>
+            <p>
+                GitHub provides us with a central platform
+                where team members can create branches,
+                develop features, submit pull requests,
+                review code, and merge approved changes.
+            </p>
 
         </div>
 
     </section>
 
 
-    <!-- PROJECT INFORMATION -->
+    <!-- OBJECTIVES SECTION -->
 
-    <section class="project-info" id="project">
+    <section class="objectives" id="objectives">
 
-        <h2>Our Development Approach</h2>
+        <h2>Our Objectives</h2>
 
-        <p>
-            Our team follows a collaborative development workflow.
-            Developers create separate branches, make changes,
-            commit their work, and create pull requests.
-            The repository owner reviews the changes and merges
-            approved contributions into the main branch.
-        </p>
+        <div class="objective-container">
+
+
+            <div class="objective-card">
+
+                <h3>Collaboration</h3>
+
+                <p>
+                    Enable multiple developers to work
+                    on the same project efficiently.
+                </p>
+
+            </div>
+
+
+            <div class="objective-card">
+
+                <h3>Version Control</h3>
+
+                <p>
+                    Track changes and maintain different
+                    versions of the project using Git.
+                </p>
+
+            </div>
+
+
+            <div class="objective-card">
+
+                <h3>Code Review</h3>
+
+                <p>
+                    Review contributions through pull
+                    requests before merging them.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- TEAM SECTION -->
+
+    <section class="team" id="team">
+
+        <h2>Meet Our Team</h2>
+
+        <div class="team-container">
+
+
+            <div class="team-card">
+
+                <h3>Team Member 1</h3>
+
+                <p class="role">
+                    Frontend Developer
+                </p>
+
+                <p>
+                    Responsible for designing and
+                    developing the user interface.
+                </p>
+
+            </div>
+
+
+            <div class="team-card">
+
+                <h3>Team Member 2</h3>
+
+                <p class="role">
+                    Backend Developer
+                </p>
+
+                <p>
+                    Responsible for application logic
+                    and system functionality.
+                </p>
+
+            </div>
+
+
+            <div class="team-card">
+
+                <h3>Team Member 3</h3>
+
+                <p class="role">
+                    DevOps Engineer
+                </p>
+
+                <p>
+                    Responsible for development workflow,
+                    automation, and deployment practices.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- DEVOPS WORKFLOW -->
+
+    <section class="workflow" id="workflow">
+
+        <h2>Our DevOps Workflow</h2>
+
+        <div class="workflow-steps">
+
+            <div class="step">
+                Plan
+            </div>
+
+            <div class="step">
+                Develop
+            </div>
+
+            <div class="step">
+                Branch
+            </div>
+
+            <div class="step">
+                Commit
+            </div>
+
+            <div class="step">
+                Pull Request
+            </div>
+
+            <div class="step">
+                Review
+            </div>
+
+            <div class="step">
+                Merge
+            </div>
+
+        </div>
 
     </section>
 
