@@ -1,12 +1,13 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DevOps Team - About Us</title>
+    <title>DevOps Team - Contact</title>
 
     <style>
 
@@ -43,6 +44,7 @@
 
         nav a {
             color: white;
+
             text-decoration: none;
 
             margin-left: 20px;
@@ -55,9 +57,9 @@
         }
 
 
-        /* ABOUT HERO */
+        /* CONTACT HERO */
 
-        .about-hero {
+        .contact-hero {
             background-color: #2563eb;
 
             color: white;
@@ -67,13 +69,13 @@
             padding: 80px 20px;
         }
 
-        .about-hero h2 {
+        .contact-hero h2 {
             font-size: 42px;
 
             margin-bottom: 15px;
         }
 
-        .about-hero p {
+        .contact-hero p {
             font-size: 18px;
 
             max-width: 750px;
@@ -82,48 +84,17 @@
         }
 
 
-        /* ABOUT SECTION */
+        /* SERVICES */
 
-        .about-section {
+        .services {
             padding: 60px 8%;
 
             background-color: white;
-        }
-
-        .about-section h2 {
-            text-align: center;
-
-            font-size: 30px;
-
-            color: #1f2937;
-
-            margin-bottom: 25px;
-        }
-
-        .about-content {
-            max-width: 850px;
-
-            margin: auto;
 
             text-align: center;
         }
 
-        .about-content p {
-            margin-bottom: 15px;
-        }
-
-
-        /* OBJECTIVES */
-
-        .objectives {
-            padding: 60px 8%;
-
-            background-color: #f4f7fb;
-
-            text-align: center;
-        }
-
-        .objectives h2 {
+        .services h2 {
             font-size: 30px;
 
             color: #1f2937;
@@ -131,7 +102,7 @@
             margin-bottom: 35px;
         }
 
-        .objective-container {
+        .service-container {
             display: flex;
 
             justify-content: center;
@@ -141,7 +112,60 @@
             flex-wrap: wrap;
         }
 
-        .objective-card {
+        .service-card {
+            background-color: #f4f7fb;
+
+            width: 280px;
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            border: 1px solid #e5e7eb;
+
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #2563eb;
+
+            margin-bottom: 12px;
+        }
+
+
+        /* CONTACT INFORMATION */
+
+        .contact-section {
+            padding: 60px 8%;
+
+            background-color: #f4f7fb;
+
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 30px;
+
+            color: #1f2937;
+
+            margin-bottom: 30px;
+        }
+
+        .contact-container {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 25px;
+
+            flex-wrap: wrap;
+        }
+
+        .contact-card {
             background-color: white;
 
             width: 280px;
@@ -153,16 +177,20 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
-        .objective-card h3 {
+        .contact-card h3 {
             color: #2563eb;
 
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            margin-bottom: 8px;
         }
 
 
-        /* TEAM SECTION */
+        /* MESSAGE FORM */
 
-        .team {
+        .message-section {
             padding: 60px 8%;
 
             background-color: white;
@@ -170,60 +198,7 @@
             text-align: center;
         }
 
-        .team h2 {
-            font-size: 30px;
-
-            color: #1f2937;
-
-            margin-bottom: 35px;
-        }
-
-        .team-container {
-            display: flex;
-
-            justify-content: center;
-
-            gap: 25px;
-
-            flex-wrap: wrap;
-        }
-
-        .team-card {
-            background-color: #f4f7fb;
-
-            width: 280px;
-
-            padding: 30px;
-
-            border-radius: 10px;
-
-            border: 1px solid #e5e7eb;
-        }
-
-        .team-card h3 {
-            color: #2563eb;
-
-            margin-bottom: 10px;
-        }
-
-        .team-card .role {
-            font-weight: bold;
-
-            margin-bottom: 10px;
-        }
-
-
-        /* DEVOPS WORKFLOW */
-
-        .workflow {
-            padding: 60px 8%;
-
-            background-color: #e5e7eb;
-
-            text-align: center;
-        }
-
-        .workflow h2 {
+        .message-section h2 {
             font-size: 30px;
 
             color: #1f2937;
@@ -231,28 +206,57 @@
             margin-bottom: 30px;
         }
 
-        .workflow-steps {
-            max-width: 900px;
+        .message-form {
+            max-width: 600px;
 
             margin: auto;
 
             display: flex;
 
-            justify-content: center;
+            flex-direction: column;
 
             gap: 15px;
-
-            flex-wrap: wrap;
         }
 
-        .step {
-            background-color: white;
+        .message-form input,
+        .message-form textarea {
+            width: 100%;
 
-            padding: 18px 25px;
+            padding: 14px;
 
-            border-radius: 8px;
+            border: 1px solid #d1d5db;
+
+            border-radius: 6px;
+
+            font-size: 15px;
+        }
+
+        .message-form textarea {
+            height: 130px;
+
+            resize: vertical;
+        }
+
+        .message-form button {
+            padding: 13px;
+
+            background-color: #2563eb;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 6px;
+
+            font-size: 16px;
 
             font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .message-form button:hover {
+            background-color: #1d4ed8;
         }
 
 
@@ -283,11 +287,11 @@
                 margin: 0 8px;
             }
 
-            .about-hero h2 {
+            .contact-hero h2 {
                 font-size: 32px;
             }
 
-            .about-hero p {
+            .contact-hero p {
                 font-size: 16px;
             }
 
@@ -309,105 +313,72 @@
 
         <nav>
 
-            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
 
-            <a href="#objectives">Objectives</a>
+            <a href="#services">Services</a>
 
-            <a href="#team">Team</a>
-
-            <a href="#workflow">Workflow</a>
+            <a href="#message">Message Us</a>
 
         </nav>
 
     </header>
 
 
-    <!-- ABOUT HERO -->
+    <!-- CONTACT HERO -->
 
-    <section class="about-hero" id="about">
+    <section class="contact-hero" id="contact">
 
-        <h2>About Our Project</h2>
+        <h2>Contact Our Team</h2>
 
         <p>
-            Learn more about our team, our objectives,
-            and how we use DevOps practices to collaborate
-            and build software efficiently.
+            Have questions about our DevOps project?
+            Get in touch with our team and learn more
+            about our collaborative development process.
         </p>
 
     </section>
 
 
-    <!-- ABOUT SECTION -->
+    <!-- SERVICES SECTION -->
 
-    <section class="about-section">
+    <section class="services" id="services">
 
-        <h2>Who We Are</h2>
+        <h2>What We Work With</h2>
 
-        <div class="about-content">
-
-            <p>
-                We are a team of developers working together
-                on a collaborative DevOps project.
-            </p>
-
-            <p>
-                Our project demonstrates how modern software
-                development teams use version control and
-                collaboration tools to manage their code.
-            </p>
-
-            <p>
-                GitHub provides us with a central platform
-                where team members can create branches,
-                develop features, submit pull requests,
-                review code, and merge approved changes.
-            </p>
-
-        </div>
-
-    </section>
+        <div class="service-container">
 
 
-    <!-- OBJECTIVES SECTION -->
+            <div class="service-card">
 
-    <section class="objectives" id="objectives">
-
-        <h2>Our Objectives</h2>
-
-        <div class="objective-container">
-
-
-            <div class="objective-card">
-
-                <h3>Collaboration</h3>
+                <h3>Web Development</h3>
 
                 <p>
-                    Enable multiple developers to work
-                    on the same project efficiently.
+                    We develop responsive and user-friendly
+                    web applications using modern technologies.
                 </p>
 
             </div>
 
 
-            <div class="objective-card">
+            <div class="service-card">
 
                 <h3>Version Control</h3>
 
                 <p>
-                    Track changes and maintain different
-                    versions of the project using Git.
+                    We use Git and GitHub to manage source code,
+                    track changes, and collaborate efficiently.
                 </p>
 
             </div>
 
 
-            <div class="objective-card">
+            <div class="service-card">
 
-                <h3>Code Review</h3>
+                <h3>DevOps Practices</h3>
 
                 <p>
-                    Review contributions through pull
-                    requests before merging them.
+                    We follow branching, commits, pull requests,
+                    code reviews, and controlled merging.
                 </p>
 
             </div>
@@ -418,58 +389,47 @@
     </section>
 
 
-    <!-- TEAM SECTION -->
+    <!-- CONTACT INFORMATION -->
 
-    <section class="team" id="team">
+    <section class="contact-section">
 
-        <h2>Meet Our Team</h2>
+        <h2>Get In Touch</h2>
 
-        <div class="team-container">
+        <div class="contact-container">
 
 
-            <div class="team-card">
+            <div class="contact-card">
 
-                <h3>Team Member 1</h3>
-
-                <p class="role">
-                    Frontend Developer
-                </p>
+                <h3>Email</h3>
 
                 <p>
-                    Responsible for designing and
-                    developing the user interface.
+                    devopsteam@example.com
                 </p>
 
             </div>
 
 
-            <div class="team-card">
+            <div class="contact-card">
 
-                <h3>Team Member 2</h3>
-
-                <p class="role">
-                    Backend Developer
-                </p>
+                <h3>GitHub</h3>
 
                 <p>
-                    Responsible for application logic
-                    and system functionality.
+                    github.com/your-team
                 </p>
 
             </div>
 
 
-            <div class="team-card">
+            <div class="contact-card">
 
-                <h3>Team Member 3</h3>
+                <h3>Working Hours</h3>
 
-                <p class="role">
-                    DevOps Engineer
+                <p>
+                    Monday - Friday
                 </p>
 
                 <p>
-                    Responsible for development workflow,
-                    automation, and deployment practices.
+                    9:00 AM - 5:00 PM
                 </p>
 
             </div>
@@ -480,43 +440,36 @@
     </section>
 
 
-    <!-- DEVOPS WORKFLOW -->
+    <!-- MESSAGE FORM -->
 
-    <section class="workflow" id="workflow">
+    <section class="message-section" id="message">
 
-        <h2>Our DevOps Workflow</h2>
+        <h2>Send Us a Message</h2>
 
-        <div class="workflow-steps">
+        <form class="message-form">
 
-            <div class="step">
-                Plan
-            </div>
+            <input
+                type="text"
+                placeholder="Enter your name"
+                required
+            >
 
-            <div class="step">
-                Develop
-            </div>
+            <input
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
 
-            <div class="step">
-                Branch
-            </div>
+            <textarea
+                placeholder="Enter your message"
+                required
+            ></textarea>
 
-            <div class="step">
-                Commit
-            </div>
+            <button type="submit">
+                Send Message
+            </button>
 
-            <div class="step">
-                Pull Request
-            </div>
-
-            <div class="step">
-                Review
-            </div>
-
-            <div class="step">
-                Merge
-            </div>
-
-        </div>
+        </form>
 
     </section>
 
@@ -535,4 +488,3 @@
 </body>
 
 </html>
-```
