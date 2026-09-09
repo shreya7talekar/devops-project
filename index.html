@@ -1,0 +1,269 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Team Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+            color: #1f2937;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #2563eb;
+        }
+
+        .tech-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .tech {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+            font-weight: bold;
+        }
+
+        .contact {
+            text-align: center;
+            background-color: #e5e7eb;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>DevOps Team</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#team">Team</a>
+            <a href="#technologies">Technologies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Welcome to Our DevOps Project</h2>
+            <p>
+                A collaborative project demonstrating Git, GitHub,
+                branching, pull requests, code review, and continuous development.
+            </p>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <h2>About Our Project</h2>
+
+            <div class="about">
+                <p>
+                    This project demonstrates how a development team can
+                    collaborate efficiently using Git and GitHub. Each team
+                    member works on an independent branch and submits their
+                    changes through a pull request before the changes are
+                    merged into the main branch.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team">
+        <div class="container">
+            <h2>Our Team</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Team Member 1</h3>
+                    <p>Frontend Developer</p>
+                    <p>Responsible for designing and improving the website.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Team Member 2</h3>
+                    <p>Backend Developer</p>
+                    <p>Responsible for application logic and integration.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Team Member 3</h3>
+                    <p>DevOps Engineer</p>
+                    <p>Responsible for Git, GitHub and deployment workflow.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGIES SECTION -->
+    <section id="technologies">
+        <div class="container">
+            <h2>Technologies Used</h2>
+
+            <div class="tech-list">
+                <div class="tech">HTML5</div>
+                <div class="tech">CSS3</div>
+                <div class="tech">Git</div>
+                <div class="tech">GitHub</div>
+                <div class="tech">VS Code</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+
+            <div class="contact">
+                <h2>Contact Our Team</h2>
+
+                <p>
+                    Email: devopsteam@example.com
+                </p>
+
+                <p>
+                    GitHub: github.com/your-team
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 DevOps Team Project. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
