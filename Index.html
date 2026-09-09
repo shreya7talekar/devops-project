@@ -1,10 +1,12 @@
 ```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Team Project</title>
+
+    <title>DevOps Team - Home</title>
 
     <style>
         * {
@@ -20,10 +22,13 @@
             line-height: 1.6;
         }
 
+        /* HEADER */
+
         header {
             background-color: #1f2937;
             color: white;
             padding: 20px 8%;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -44,226 +49,273 @@
             text-decoration: underline;
         }
 
+
+        /* HOME / HERO SECTION */
+
         .hero {
             background-color: #2563eb;
             color: white;
+
             text-align: center;
-            padding: 80px 20px;
+
+            padding: 100px 20px;
         }
 
         .hero h2 {
-            font-size: 42px;
-            margin-bottom: 15px;
+            font-size: 45px;
+            margin-bottom: 20px;
         }
 
         .hero p {
             font-size: 18px;
-            max-width: 700px;
-            margin: auto;
+            max-width: 750px;
+            margin: 0 auto 20px;
         }
 
-        .container {
-            width: 85%;
-            max-width: 1100px;
-            margin: auto;
+        .hero button {
+            margin-top: 20px;
+
+            padding: 12px 25px;
+
+            border: none;
+            border-radius: 6px;
+
+            background-color: white;
+            color: #2563eb;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
         }
 
-        section {
-            padding: 60px 0;
+        .hero button:hover {
+            background-color: #e5e7eb;
         }
 
-        section h2 {
+
+        /* FEATURES */
+
+        .features {
+            padding: 60px 8%;
             text-align: center;
-            margin-bottom: 30px;
+        }
+
+        .features h2 {
             font-size: 30px;
+            margin-bottom: 40px;
             color: #1f2937;
         }
 
-        .about {
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            background-color: white;
+
+            width: 280px;
+
+            padding: 30px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-card h3 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+
+        /* PROJECT INFORMATION */
+
+        .project-info {
+            background-color: #e5e7eb;
+
+            padding: 60px 8%;
+
             text-align: center;
+        }
+
+        .project-info h2 {
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+
+        .project-info p {
             max-width: 800px;
             margin: auto;
         }
 
-        .cards {
-            display: flex;
-            gap: 25px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
 
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            width: 300px;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #2563eb;
-        }
-
-        .tech-list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .tech {
-            background: white;
-            padding: 15px 25px;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-            font-weight: bold;
-        }
-
-        .contact {
-            text-align: center;
-            background-color: #e5e7eb;
-            padding: 40px;
-            border-radius: 10px;
-        }
+        /* FOOTER */
 
         footer {
             background-color: #1f2937;
             color: white;
+
             text-align: center;
+
             padding: 20px;
-            margin-top: 40px;
+
+            margin-top: 0;
         }
 
+
+        /* RESPONSIVE DESIGN */
+
         @media (max-width: 700px) {
+
             header {
                 flex-direction: column;
                 gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
             }
 
             .hero h2 {
                 font-size: 32px;
             }
 
-            nav a {
-                margin: 0 8px;
+            .hero p {
+                font-size: 16px;
             }
         }
     </style>
+
 </head>
+
 
 <body>
 
     <!-- HEADER -->
+
     <header>
+
         <h1>DevOps Team</h1>
 
         <nav>
+
             <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#team">Team</a>
-            <a href="#technologies">Technologies</a>
-            <a href="#contact">Contact</a>
+
+            <a href="#features">Features</a>
+
+            <a href="#project">Project</a>
+
         </nav>
+
     </header>
 
-    <!-- HERO SECTION -->
+
+    <!-- HOME SECTION -->
+
     <section class="hero" id="home">
-        <div class="container">
-            <h2>Welcome to Our DevOps Project</h2>
-            <p>
-                A collaborative project demonstrating Git, GitHub,
-                branching, pull requests, code review, and continuous development.
-            </p>
-        </div>
+
+        <h2>Welcome to Our DevOps Project</h2>
+
+        <p>
+            Welcome to our collaborative DevOps project.
+            This website demonstrates how a development team
+            can work together using Git, GitHub, branches,
+            commits, and pull requests.
+        </p>
+
+        <p>
+            Each team member contributes to the project
+            through an independent development branch.
+        </p>
+
+        <button onclick="document.getElementById('features').scrollIntoView()">
+            Explore Project
+        </button>
+
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about">
-        <div class="container">
-            <h2>About Our Project</h2>
 
-            <div class="about">
-                <p>
-                    This project demonstrates how a development team can
-                    collaborate efficiently using Git and GitHub. Each team
-                    member works on an independent branch and submits their
-                    changes through a pull request before the changes are
-                    merged into the main branch.
-                </p>
-            </div>
-        </div>
-    </section>
+    <!-- FEATURES SECTION -->
 
-    <!-- TEAM SECTION -->
-    <section id="team">
-        <div class="container">
-            <h2>Our Team</h2>
+    <section class="features" id="features">
 
-            <div class="cards">
+        <h2>What We Demonstrate</h2>
 
-                <div class="card">
-                    <h3>Team Member 1</h3>
-                    <p>Frontend Developer</p>
-                    <p>Responsible for designing and improving the website.</p>
-                </div>
+        <div class="feature-container">
 
-                <div class="card">
-                    <h3>Team Member 2</h3>
-                    <p>Backend Developer</p>
-                    <p>Responsible for application logic and integration.</p>
-                </div>
+            <div class="feature-card">
 
-                <div class="card">
-                    <h3>Team Member 3</h3>
-                    <p>DevOps Engineer</p>
-                    <p>Responsible for Git, GitHub and deployment workflow.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- TECHNOLOGIES SECTION -->
-    <section id="technologies">
-        <div class="container">
-            <h2>Technologies Used</h2>
-
-            <div class="tech-list">
-                <div class="tech">HTML5</div>
-                <div class="tech">CSS3</div>
-                <div class="tech">Git</div>
-                <div class="tech">GitHub</div>
-                <div class="tech">VS Code</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <div class="container">
-
-            <div class="contact">
-                <h2>Contact Our Team</h2>
+                <h3>Git</h3>
 
                 <p>
-                    Email: devopsteam@example.com
+                    Git is used to track changes and maintain
+                    different versions of our project.
                 </p>
 
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>GitHub</h3>
+
                 <p>
-                    GitHub: github.com/your-team
+                    GitHub allows our team to store the project
+                    online and collaborate with each other.
                 </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>Pull Requests</h3>
+
+                <p>
+                    Team members submit their changes through
+                    pull requests before they are merged.
+                </p>
+
             </div>
 
         </div>
+
     </section>
+
+
+    <!-- PROJECT INFORMATION -->
+
+    <section class="project-info" id="project">
+
+        <h2>Our Development Approach</h2>
+
+        <p>
+            Our team follows a collaborative development workflow.
+            Developers create separate branches, make changes,
+            commit their work, and create pull requests.
+            The repository owner reviews the changes and merges
+            approved contributions into the main branch.
+        </p>
+
+    </section>
+
 
     <!-- FOOTER -->
+
     <footer>
-        <p>&copy; 2026 DevOps Team Project. All Rights Reserved.</p>
+
+        <p>
+            &copy; 2026 DevOps Team Project. All Rights Reserved.
+        </p>
+
     </footer>
 
+
 </body>
+
 </html>
 ```
